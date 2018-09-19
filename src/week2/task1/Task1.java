@@ -1,7 +1,6 @@
 ﻿package week2.task1;
 
 public class Task1 {
-
     public static int gcd(int a, int b) {
         // TODO: Tính ước chung lớn nhất của 2 số a, b
 	while (a!=b){
@@ -21,5 +20,6 @@ public class Task1 {
 	}
         int m=arr[n-1];
         return m;
+
     }
 }
