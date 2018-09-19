@@ -16,37 +16,37 @@ public class StudentManagement {
     void studentsByGroup() {
         // TODO:
           for(int i=0; i<size; i++){
-            int kt=1;
-            for (int j=0; j<i; j++){
-                if(sv[i].getgroup().equals(sv[j].getgroup())==true) {
-                    kt=0;
-                    break;
+                int kt=1;
+                for (int j=0; j<i; j++){
+                     if(sv[i].getgroup().equals(sv[j].getgroup())==true) {
+                           kt=0;
+                           break;
+                     }
                 }
-            }
-            if (kt==1) {
-                System.out.println("SV lop :"+sv[i].getgroup()+ " gom: ");
-                System.out.println(sv[i].getname());
-                for(int j=i+1; j<size; j++){
-                    if(sv[i].getgroup().equals(sv[j].getgroup())==true){
-                        System.out.println(sv[j].getname());
-                    }
-                }
-            }
-        }
+               if (kt==1) {
+                      System.out.println("SV lop :"+sv[i].getgroup()+ " gom: ");
+                      System.out.println(sv[i].getname());
+                      for(int j=i+1; j<size; j++){
+                             if(sv[i].getgroup().equals(sv[j].getgroup())==true){
+                                   System.out.println(sv[j].getname());
+                             }
+                      }
+               }
+         }
     
     }
 
     void removeStudent(String id) {
         // TODO:
-    for(int i=0; i<size; i++){
-             if(sv[i].getid().equals(id)==true){
-                 for(int j=i; j<size-1; j++){
-                     sv[j]=sv[j+1];
-                 }
-                size--; 
-                break;
+            for(int i=0; i<size; i++){
+                  if(sv[i].getid().equals(id)==true){
+                         for(int j=i; j<size-1; j++){
+                                sv[j]=sv[j+1];
+                         }
+                         size--; 
+                         break;
+                  }
              }
-         }
     }
 
     public static void main(String[] args) {
