@@ -7,12 +7,9 @@ public class Task1 {
 		if(a>b) a=a-b;
 		else b=b-a;
 	}
-<<<<<<< HEAD
+
 	return a;
-=======
-	System.out.print(a);
-        return 0;
->>>>>>> bc3eb7699501e0ba30db787b3ba036764b2088a6
+
     }
 
     public static int fibonacci(int n) {
@@ -25,6 +22,5 @@ public class Task1 {
 	}
         int m=arr[n-1];
         return m;
-
     }
 }
