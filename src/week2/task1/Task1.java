@@ -8,13 +8,18 @@ public class Task1 {
 		if(a>b) a=a-b;
 		else b=b-a;
 	}
-	cout<<a;
-        return 0;
+	return a;
     }
 
     public static int fibonacci(int n) {
         // TODO: Tìm số fibonacci ở vị trí n
 	
-        return 0;
+        int [] arr= new int [n];
+        arr[0]=1; arr[1]=1;
+	for(int i=2; i<n; i++){
+		arr[i]=arr[i-1]+arr[i-2];
+	}
+        int m=arr[n-1];
+        return m;
     }
 }
