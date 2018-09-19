@@ -8,7 +8,7 @@ public class Task1 {
 		if(a>b) a=a-b;
 		else b=b-a;
 	}
-	cout<<a;
+	System.out.print(a);
         return 0;
     }
 
