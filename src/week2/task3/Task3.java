@@ -50,16 +50,7 @@ class dog{
     public 
 }
 
-public class HelloWorld {
-      
-    
-    public static void main(String[] args) {
-       giao_vien n1= new giao_vien("ha", "12A", 35);
-       giao_vien n2= new giao_vien("van", "11A", 25);
-        n1.check(n2);
-    }
-    
-}
+
 public class Task3 {
 }
 
