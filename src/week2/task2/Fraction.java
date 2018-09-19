@@ -9,13 +9,11 @@ public class Fraction {
           this.numerator=numerator;
           this.denominator=denominator;
     }
-
     public Fraction add(Fraction other) {
         // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction sum = new Fraction(this.numerator*other.denominator+other.numerator*this.denominator,this.denominator*other.denominator);
         return sum;
     }
-
     public Fraction subtract(Fraction other) {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction hieu = new Fraction(this.numerator*other.denominator-other.numerator*this.denominator,this.denominator*other.denominator);
