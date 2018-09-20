@@ -1,4 +1,4 @@
-﻿package week2.task3;
+package week2.task3;
 class giao_vien{
     private String name, lop;
     private int tuoi;
