@@ -1,4 +1,4 @@
-﻿package week2.task2;
+package week2.task2;
 
 public class Fraction {
 
