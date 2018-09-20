@@ -1,4 +1,4 @@
-﻿package week1;
+package week1;
 
 public class StudentManagement {
 
@@ -77,10 +77,10 @@ public class StudentManagement {
         StudentManagement sc=new StudentManagement();
         
         //in sinh vien theo lop
-        sc.studentsbyGroup();
+        sc.studentsByGroup();
         
         //xoa mot sv theo id
         sc.removeStudent("17020111");
-        sc.studentsbyGroup();
+        sc.studentsByGroup();
     }
 }
