@@ -145,6 +145,11 @@ class benhnhan{
             System.out.println("Can cap cuu gap");
         }
     }
+    public void samebenh(benhnhan other){
+        if(benh.equals(other.getbenh())==true){
+            System.out.println("xep cung phong");
+        }
+    }
 }
 
 
