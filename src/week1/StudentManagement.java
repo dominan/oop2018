@@ -80,7 +80,7 @@ public class StudentManagement {
         sc.studentsByGroup();
         
         //xoa mot sv theo id
-        sc.removeStudent("17020111");
+        sc.removeStudent("17020999");
         sc.studentsByGroup();
     }
 }
