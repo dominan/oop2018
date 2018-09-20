@@ -7,7 +7,7 @@ public class StudentManagement {
     public static Student sv[]= new Student[100];
     private static int size = 4;
 
-    public boolean sameGroup(Student s1, Student s2) {
+    public static boolean sameGroup(Student s1, Student s2) {
         // TODO:
         if(s1.getgroup().equals(s2.getgroup())==true) return true;
         else return false;
