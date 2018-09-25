@@ -3,7 +3,7 @@ package week2.task2;
 public class Fraction {
 
     // TODO: khai báo các thuộc tính
-   int numerator, denominator;
+   private int numerator, denominator;
     public Fraction(int numerator, int denominator) {
         // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
         int a=numerator;
