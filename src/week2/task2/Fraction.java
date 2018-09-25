@@ -6,8 +6,14 @@ public class Fraction {
    int numerator, denominator;
     public Fraction(int numerator, int denominator) {
         // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
-          this.numerator=numerator;
-          this.denominator=denominator;
+        int a=numerator;
+        int b=denominator;
+        while (a!=b){
+            if(a>b) a=a-b;
+            else b=b-a;
+        }
+        this.numerator=numerator/a;
+        this.denominator=denominator/a;
     }
     public Fraction add(Fraction other) {
         // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
