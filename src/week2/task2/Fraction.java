@@ -8,10 +8,13 @@ public class Fraction {
         // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
         int a=numerator;
         int b=denominator;
-        while (a!=b){
-            if(a>b) a=a-b;
-            else b=b-a;
-        }
+        a=Math.abs(a);
+	    b=Math.abs(b);
+        
+	    while (a!=b){
+		    if(a>b) a=a-b;
+		    else if(a<b) b=b-a;
+	    }
         this.numerator=numerator/a;
         this.denominator=denominator/a;
     }
