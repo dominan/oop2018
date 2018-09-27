@@ -37,4 +37,9 @@ public class Fraction {
         Fraction chia = new Fraction(this.numerator*other.denominator,this.denominator*other.numerator);
         return chia;
     }
+    public boolean equals(Object obj){
+        Fraction other = (Fraction)obj;
+        if(this.numerator*other.denominator-other.numerator*this.denominator==0) return true;
+        else return false;
+    }
 }
