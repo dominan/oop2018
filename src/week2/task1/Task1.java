@@ -2,10 +2,12 @@ package week2.task1;
 
 public class Task1 {
     public static int gcd(int a, int b) {
+	a=Math.abs(a);
+	b=Math.abs(b);
         // TODO: Tính ước chung lớn nhất của 2 số a, b
 	while (a!=b){
 		if(a>b) a=a-b;
-		else b=b-a;
+		else if(a<b) b=b-a;
 	}
 
 	return a;
