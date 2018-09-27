@@ -20,7 +20,7 @@ public class Task1 {
 	for(int i=2; i<n; i++){
 		arr[i]=arr[i-1]+arr[i-2];
 	}
-        int m=arr[n-1];
+        int m=arr[n];
         return m;
     }
 }
