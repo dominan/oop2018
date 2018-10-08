@@ -6,7 +6,7 @@
  * @author cuong
  * @version 0.1
  */
-package week4.task2;
+package week4.task1;
 class hoaqua{
     private String xuatxu, ngaynhap;
     private  int gia;
