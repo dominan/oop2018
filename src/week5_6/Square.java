@@ -3,72 +3,67 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package week4.task2;
+package week5_6;
 
 /**
  *
- * @author Lai Thi Thu Phuong
- */
-/**
- * doi tuong ke thua tu Ractangle
- * @since Rectangle
+ * @author Minh Anh
  */
 public class Square extends Rectangle {
-    
-  
-    /**
-     * ham khoi tao khong tham so
-     */
+    private double side;
     public Square(){
     }
     /**
-     * @param side thông số 1
+     * @param side canh hinh vuong
      */
     public Square(double side) {
+        this.side= side;
         setLength(side); 
         setWidth(side);
     }
     /**
-     * @param side thong so thu 1
-     * @param color thông số thứ 2
-     * @param filled thông số thứ 3
-     * @since Rectangle
+     * @param side canh hinh vuong
+     * @param color mau 
+     * @param filled day hay khong
      */
     public Square(double side,String color,boolean filled){
        super(side,side,color,filled);
+       this.side= side;
     }
     /**
-     * @return side 
+     * @return side
      */
     public double getSide() {
         return super.getLength();
     }
     /**
-     * @param side thông số 1
+     * @param side canh hinh vuong
      */
     public void setSide(double side) {
         super.setLength(side); 
         super.setWidth(side);
     }
-    /**
-     * @since Shape
-     */
     public void setWidth() {
         super.setWidth(super.getWidth());
     }
-    /**
-     * @since Shape
-     */
     public void setLength(){
         super.setLength(super.getLength());
     }
     /**
-     * @return xâu thong tin cua hình vuông 
+     * hien thi thong tin hinh 
+     * @return String 
      */
     @Override
     public String toString() {
         return "Square{ "+"side: "+super.getWidth()
                 + ", "+   "Area: "+this.getArea()
                 + ", "+   "Perimeter: "+this.getPerimeter()+" }";
+    }
+    /**
+     * @param a hinh vuong khac
+     * @return so sanh hai hình giong hay khac
+     */
+    public boolean isSameSquare(Square a) {
+	return super.isSameRectangle(a);
     }
 }

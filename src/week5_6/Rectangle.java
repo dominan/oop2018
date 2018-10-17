@@ -3,32 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package week4.task2;
+package week5_6;
 
 /**
  *
- * @author Lai Thi Thu Phuong
+ * @author Minh Anh
  */
 public class Rectangle extends Shape{
     private double width=1.0, length=1.0;
     /**
-     * hàm khai báo không chứa tham số
+     * ham contructor khong chua tham so
      */
     public Rectangle(){}
     /**
-     * @param width thông số 1
-     * @param length thông số 2
+     * @param width chieu rong
+     * @param length chieu dai
      */
     public Rectangle(double width, double length){
         this.length=length;
         this.width=width;
     }
     /**
-     * @param width thông số 1
-     * @param length thông số 2
-     * @param color thông số 3
-     * @param filled thông số 4
-     * @since Shape
+     * @param width chieu rong
+     * @param length chieu dai
+     * @param color mau sac
+     * @param filled day
      */
     public Rectangle(double width, double length,String color, boolean filled){
         super( color, filled);
@@ -42,7 +41,7 @@ public class Rectangle extends Shape{
         return width;
     }
     /**
-     * @param width thông số 1
+     * @param width chieu rong
      */
     public void setWidth(double width) {
         this.width = width;
@@ -54,27 +53,46 @@ public class Rectangle extends Shape{
         return length;
     }
     /**
-     * @param length thông số 2
+     * @param length chieu dai
      */
     public void setLength(double length) {
         this.length = length;
     }
     /**
-     * @return diện tích đối tượng chữ nhật
+     * @return dien tich
      */
     public double getArea(){
         return this.length*this.width;
     }
     /**
-     * @return chu vi đối tượng chữ nhật
+     * @return chu vi
      */
     public double getPerimeter(){
         return 2*(this.length+this.width);
     }
     /**
-     * hiện thị thông tin thuộc tính đối tượng
+     * hien thi thong tin hinh 
+     * @return String 
      */
+    @Override
     public String toString(){
-        return "thong tin:\nMau: "+ this.getColor()+"\n"+ this.isFilled()+"\nChieu dai: "+ this.length+"\nChieu rong: "+ this.width+"\nS: "+ this.getArea()+"\nC: "+ this.getPerimeter();
+        return "Rectangle: { Width: "+ this.width 
+                + "\nLength: "+this.length+ "\nColor: "+ super.getColor()
+                + "\nFilled: "+ super.isFilled()+ "\nArea: "+ this.getArea()
+                + "\nPerimeter: "+ this.getPerimeter();
+    }
+    /**
+     * @param o mot doi tuong kieu Shape khac
+     * @return boolean 
+     */
+    public boolean isSame(Shape o) {
+	return super.isSame(o);
+    }
+    /**
+     * @param a mot hinh chu nhat khac
+     * @return giong hay khac: true/false 
+     */
+    public boolean isSameRectangle (Rectangle a) {
+	return super.isSame(a)&&a.getLength()==this.length&&a.getWidth()== this.width;
     }
 }
